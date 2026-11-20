@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamada Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <script src="./cachorro.js" defer></script>
+</head>
+
+<body>
+  <img src="./assets/cash-money-logo-design-concept_761413-7119.avif" alt="logo" class="logo">
+  
+<main>
+  <label>
+    Converter <b>de</b>
+    <select class = "currency-select-to-convert">
+      <option value="real">R$ Real Brasileiro</option>
+      <option value="dolar">U$ Dólar Americano</option>
+      <option value="euro">€ Euro</option>
+      <option value="iene">¥ Iene</option>
+
+    </select>
+
+
+  </label>
+  <label>
+    Converter <b>para</b>
+    <select class="currency-select-converted">
+      <option value="dolar">U$ Dólar Americano</option>
+      <option value="euro">€ Euro</option>
+      <option value="real">R$ Real Brasileiro</option>
+      <option value="iene">¥ Iene</option>
+
+    </select>
+  </label>
+
+  <label>
+    Valor
+    <input type="number" name="valor" id="valorAserConvertido" class="valorConverter">
+  </label>
+
+  <button class="convert-button">Converter</button>
+
+  <section>
+    <div class="currency-box">
+      <img src="./assets/brasil.png" alt="moeda-a-converter" class="flag" id="currency-flag-to-convert">
+      <p class="currency" id="currency-text-to-convert">Real</p>
+      <p class="currency-value" id="toConvert">R$1000</p>
+    </div>
+    <img src="./assets/Vector.png" alt="vetor-baixo" class="vetor-baixo">
+    <div class="currency-box">
+      <img src="./assets/usa.png" alt="moeda-convertida" class="flag" id="currency-flag-converted">
+      <p class="currency" id="currency-text-converted">Dólar Americano</p>
+      <p class="currency-value" id="converted">U$6</p>
+    </div>
+
+  </section>
+</main>
+
+</body>
+
+</html>
